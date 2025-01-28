@@ -1,0 +1,37 @@
+{
+  "name": "serverless-dani",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx serverless offline",
+    "deploy": "npx serverless deploy --verbose",
+    "migrate": "knex migrate:latest --knexfile knexfile.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
+    "@types/busboy": "^1.5.4",
+    "@types/node": "^22.10.10",
+    "@types/parse-multipart": "^1.0.2",
+    "serverless": "^4.5.0",
+    "serverless-offline": "^14.4.0",
+    "serverless-webpack": "^5.15.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/aws-sdk": "^0.0.42",
+    "@types/knex": "^0.15.2",
+    "aws-sdk": "^2.1692.0",
+    "busboy": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "knex": "^3.1.0",
+    "parse-multipart": "^1.0.4",
+    "pg": "^8.13.1",
+    "serverless-dotenv-plugin": "^6.0.0"
+  }
+}
